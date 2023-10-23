@@ -1,0 +1,452 @@
+:root {
+    --primary-color: #2e3192;
+    --secondry-color: #f4582f;
+    --third-color: #ee204c;
+    --white-color: #fff;
+    --font-color: #929292;
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    color: var(--font-color);
+    padding: 0;
+    margin: 0;
+}
+
+header > h1 {
+    color: var(--primary-color);
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: var(--secondry-color);
+    transition: .3s;
+}
+
+header p {
+    color: var(--font-color);
+}
+
+button:hover,
+.btn:hover,
+.badge:hover {
+    background-color: var(--secondry-color);
+    transition: .3s;
+}
+
+.btn {
+    width: 10rem;
+    height: 3rem;
+    text-transform: uppercase;
+    border: none;
+    font-size: .8rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-read-more {
+    min-width: 12rem;
+    color: var(--primary-color);
+    justify-content: flex-start;
+    text-align: left;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.btn-read-more .fa-angle-right {
+    position: relative;
+    font-size: 1.2rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.8rem;
+    border-radius: 50px;
+    border: 3px solid;
+}
+
+.m-top {
+    margin-top: 8rem;
+}
+
+.orange {
+    color: var(--secondry-color);
+}
+
+header > div:first-child {
+    background-color: var(--primary-color);
+    font-size: .8rem;
+}
+
+header > div:first-child p {
+    color: var(--white-color);
+}
+
+.navbar {
+    text-transform: uppercase;
+    max-width: 100%;
+}
+
+.navbar a,
+.navbar a.nav-link.active {
+    color: var(--primary-color);
+}
+
+.navbar a:hover {
+    color: var(--secondry-color);
+    background-color: transparent;
+}
+
+.navbar a:hover,
+.navbar a.nav-link.active {
+    border-top: 2px solid var(--secondry-color);
+}
+
+.navbar button {
+    background-color: #fff2f2;
+    color: var(--primary-color);
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hero */
+.carousel-caption {
+    top: 40%;
+    transform: translateY(-40%);
+    text-align: left;
+}
+
+.carousel-caption h1,
+.carousel-caption p {
+    width: fit-content;
+    border-radius: 5px;
+}
+
+.carousel-caption h1 {
+    color: var(--primary-color);
+    font-weight: 600;
+    background-color: var(--white-color);
+    font-size: 3rem;
+}
+
+.carousel-caption p {
+    background-color: var(--secondry-color);
+    text-transform: uppercase;
+}
+
+.carousel-caption .btn {
+    margin-left: .3rem;
+}
+
+.carousel-caption .btn:first-child {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.carousel-caption .btn:last-child {
+    color: var(--primary-color);
+    background-color: var(--white-color);
+}
+
+.carousel-caption .btn:hover {
+    background-color: var(--secondry-color);
+    color: var(--white-color);
+}
+
+.carousel-control-btn span {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+
+.carousel .carousel-indicators {
+    margin-top: 3rem;
+    bottom: -90px;
+}
+
+.carousel .carousel-indicators button {
+    background-color: var(--primary-color);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 2rem .7rem;
+}
+
+.carousel .carousel-indicators button:nth-child(odd) {
+    background-color: var(--secondry-color);
+}
+
+.carousel .carousel-indicators button:nth-child(even) {
+    background-color: var(--primary-color);
+}
+
+.carousel .carousel-indicators button.active {
+    background-color: #cae3f9;
+    opacity: 1;
+    width: 15px;
+    height: 15px;
+}
+
+/* CARDS */
+.card .carousel-control-btn {
+    background-color: var(--primary-color);
+}
+
+.card {
+    border: none;
+}
+
+.card .card-body {
+    padding-left: 0;
+    padding-right: 0;
+    color: var(--font-color);
+}
+
+.card h2,
+.card h5 {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.card h2 {
+    font-size: 2rem;
+}
+
+
+.card .card-body ul {
+    padding: 0 .7rem;
+}
+
+.card .card-body ul li {
+    padding-left: 1rem;
+    margin: .5rem 0;
+}
+
+.card .card-body ul li::marker {
+    content: "+";
+    color: var(--secondry-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card .card-body a:hover {
+    background-color: transparent;
+    color: var(--secondry-color);
+}
+
+.working-hours {
+    text-align: center;
+    background-color: #fff2f2;
+    padding: 2rem 0 0;
+}
+
+.working-hours .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 0;
+}
+
+.working-hours .card-body ul  {
+    list-style: none;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.working-hours .card-body ul li::marker {
+    content: none;
+}
+
+.working-hours .card-body ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 1.5rem 0;
+    font-weight: 500;
+}
+
+.working-hours .card-body ul li span {
+    color: var(--secondry-color);
+}
+
+.working-hours .card-body a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 0 0 .5rem .5rem;
+}
+
+.working-hours .card-body a:hover {
+    background-color: var(--secondry-color);
+}
+
+.section3 article {
+    background-color: #eef7ff;
+}
+
+.peopleSay .badge {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+    background-color: var(--primary-color);
+    top: 30px;
+    left: 72%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.descount {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.descount a {
+    display: inline-block;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    border-radius: 5px;
+}
+
+.descount a:hover {
+    background-color: var(--secondry-color);
+    color: var(--white-color);
+}
+
+.taps {
+    background-color: #fff2f2;
+    padding: 7rem 6rem;
+}
+
+.taps .nav-link {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.taps .nav-link:hover {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--secondry-color);
+}
+
+.taps .nav-link.active {
+    border: none;
+    background-color: transparent;
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--secondry-color);
+}
+
+.tab-pane header {
+    color: var(--primary-color);
+}
+
+.tab-pane img {
+    width: 90%;
+}
+
+.expert header {
+    color: var(--primary-color);
+}
+
+.expert p {
+    font-size: .9rem;
+}
+
+.expert .badge {
+    background-color: var(--primary-color);
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 35px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.expert .badge:hover {
+    background-color: var(--secondry-color);
+}
+
+.expert a:hover {
+    background-color: transparent;
+    color: var(--secondry-color);
+}
+
+.request article {
+    position: relative;
+}
+
+.request article::before {
+    content: "";
+    width: 120%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #eef7ff;
+    transform: skew(-15deg);
+}
+
+.request header {
+    z-index: 100;
+}
+
+.request input, 
+.request textarea {
+    border-radius: 3px;
+    border: 1px solid var(--font-color);
+    z-index: 100;
+}
+
+.request textarea {
+    resize: none;
+}
+
+.request input[type = "submit"] {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+}
+
+.request input[type="submit"]:hover {
+    background-color: var(--secondry-color);
+    transition: .3s;
+}
+
+.clients {
+    background-color: #fff2f2;
+    margin-bottom: 10rem;
+}
